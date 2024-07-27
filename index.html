@@ -5,15 +5,126 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+		*{
+			border: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		
+		.container{
+			margin-left:auto;
+			margin-right: auto;
+			max-width: 1200px;
+		}
+		.flexbox{
+			display: flex;
+			justify-content:space-evenly;	
+			flex-wrap: wrap;		
+		}
+		article{
+			width: 200px;			
+			border:1px solid blue;
+			margin:5px;
+			display: flex;
+			flex-direction: column;
+		}
+		.flexbox img{
+			width: 100%;			
+			height: 100%;
+			object-fit: cover;
+			/*width: 100px;
+			margin:2px;*/
+			/*height: 200px;
+			object-fit: cover;*/
+		}
+		section{
+			text-align: center;
+		}
+
+		.btn{
+		    padding: 10px;
+		    color: #fff;
+		    border-radius: 5px;
+		    background: #000;
+		}
+
+		.linea{
+			border:1px solid blue;
+			width: 100px;
+			height: 200px;
+			padding: 50px 100px;			
+		}
+		.bloque{
+			border: 1px solid pink;
+			width: 100px;
+			height: 200px;
+		}
+	</style>
 </head>
 <body>
-	<h1>Hola</h1>
-	<p>mi primera web</p>
-	<ul>
-		<li>frutaas</li>
-		<li>verduras</li>
-		<li>coches</li>
-	</ul>
+	<header>
+		
+	</header>
+	<main class="container">
+		<div>
+			<span class="linea">
+				Linea
+			</span>			
+			<div class="bloque">
+				Bloque
+			</div>
+			<a href="" class="linea">Click</a>
+		</div>
+		<div class="flexbox">
+			<article>
+				<img src="images/gallery/perro_blanco.jpg" alt="">
+				<section>
+					<h3>Lorem ipsum dolor sit amet.</h3>
+					<p>Precio</p>
+					<a href="#" class="btn">Comprar</a>
+				</section>
+			</article>
+			<article>
+				<img src="images/gallery/gato.jpg" alt="">
+				<section>
+					<h3>Titulo</h3>
+					<p>Precio</p>
+					<button class="btn">Comprar</button>
+				</section>
+			</article>
+			<article>
+				<img src="images/gallery/perro_negro.jpg" alt="">
+				<section>
+					<h3>Titulo</h3>
+					<p>Precio</p>
+					<button class="btn">Comprar</button>
+				</section>
+			</article>
+			<!--<img src="images/gallery/img-1.jpg" alt="">
+			<img src="images/gallery/img-2.jpg" alt="">
+			<img src="images/gallery/img-3.jpg" alt="">
+			<img src="images/gallery/img-1.jpg" alt="">
+			<img src="images/gallery/img-2.jpg" alt="">
+			<img src="images/gallery/img-3.jpg" alt="">
+			<img src="images/gallery/img-1.jpg" alt="">
+			<img src="images/gallery/img-2.jpg" alt="">
+			<img src="images/gallery/img-3.jpg" alt="">
+			<img src="images/gallery/img-1.jpg" alt="">
+			<img src="images/gallery/img-2.jpg" alt="">
+			<img src="images/gallery/img-3.jpg" alt="">
+			<img src="images/gallery/img-1.jpg" alt="">
+			<img src="images/gallery/img-2.jpg" alt="">
+			<img src="images/gallery/img-3.jpg" alt="">
+			<img src="images/gallery/img-1.jpg" alt="">
+			<img src="images/gallery/img-2.jpg" alt="">
+			<img src="images/gallery/img-3.jpg" alt="">-->
+		</div>		
+	</main>
+	<footer>
+		
+	</footer>
 	<script src="js/script.js"></script>
 </body>
 </html>
